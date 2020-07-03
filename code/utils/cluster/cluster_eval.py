@@ -47,8 +47,7 @@ def _clustering_get_data(config, net, dataloader, sobel=False,
 
     assert (x_outs[0].shape[1] == config.output_k)
     assert (len(x_outs[0].shape) == 2)
-    ########
-    print(flat_targets)
+    
     num_test_curr = flat_targets.shape[0]
     num_test += num_test_curr
 
